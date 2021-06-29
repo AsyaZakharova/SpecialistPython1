@@ -29,3 +29,9 @@
 # 20 199.80 Rub.
 
 # TODO: your code here
+price = float(input("Введите стоимость за единицу: "))
+quantity = 1
+while quantity <=20:
+    total_price = price * quantity
+    print("#", quantity, total_price, "Rub.")
+    quantity += 1
