@@ -8,3 +8,12 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+number = int(input("Введите число: "))
+units = number % 10
+dozens = number / 10 % 10
+if dozens == 1 or units == 0 or units >= 5:
+    print("На лугу пасется", number, "коров.")
+elif units == 1:
+    print("На лугу пасется", number, "корова.")
+else:
+    print("На лугу пасется", number, "коровы.")
